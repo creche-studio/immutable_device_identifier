@@ -1,5 +1,6 @@
 package studio.creche.immutable_device_identifier
 
+import android.media.MediaDrm
 import androidx.annotation.NonNull
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
@@ -7,6 +8,8 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
+
+import java.util.UUID
 
 /** ImmutableDeviceIdentifierPlugin */
 class ImmutableDeviceIdentifierPlugin: FlutterPlugin, MethodCallHandler {
@@ -22,8 +25,13 @@ class ImmutableDeviceIdentifierPlugin: FlutterPlugin, MethodCallHandler {
   }
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
-    if (call.method == "getPlatformVersion") {
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
+    if (call.method == "getUniqueId") {
+      // generate UUID and return it
+      val uuid = UUID.fromString("edef8ba9-79d6-4ace-a3c8-27dcd51d21ed")
+      val id = MediaDrm(uuid).getPropertyByteArray(MediaDrm.PROPERTY_DEVICE_UNIQUE_ID)
+      val uniqueId = id.joinToString(":") { String.format("%02X", it) }
+
+      result.success(uniqueId)
     } else {
       result.notImplemented()
     }
