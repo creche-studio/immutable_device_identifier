@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - immutable_device_identifier (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - immutable_device_identifier (from `.symlinks/plugins/immutable_device_identifier/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  immutable_device_identifier:
+    :path: ".symlinks/plugins/immutable_device_identifier/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  immutable_device_identifier: 8d1c2b3c889d79f1f9aa075ea893aa4457b48307
+
+PODFILE CHECKSUM: 775997f741c536251164e3eacf6e34abf2eb7a17
+
+COCOAPODS: 1.11.2
