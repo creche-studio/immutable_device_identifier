@@ -2,10 +2,16 @@ PODS:
   - Flutter (1.0.0)
   - immutable_device_identifier (0.0.1):
     - Flutter
+    - KeychainAccess
+  - KeychainAccess (4.2.2)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - immutable_device_identifier (from `.symlinks/plugins/immutable_device_identifier/ios`)
+
+SPEC REPOS:
+  trunk:
+    - KeychainAccess
 
 EXTERNAL SOURCES:
   Flutter:
@@ -15,7 +21,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
-  immutable_device_identifier: 8d1c2b3c889d79f1f9aa075ea893aa4457b48307
+  immutable_device_identifier: 23f2303edb7b3dd03c6632e6421fcc317a4d319e
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
 
 PODFILE CHECKSUM: 775997f741c536251164e3eacf6e34abf2eb7a17
 
