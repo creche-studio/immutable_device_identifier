@@ -1,6 +1,6 @@
 name: immutable_device_identifier
 description: It supply device identifier for iOS / Android device. (That identifier does not change per installation)
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/creche-studio/immutable_device_identifier
 
 environment:
