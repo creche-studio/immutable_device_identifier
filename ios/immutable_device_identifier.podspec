@@ -5,11 +5,12 @@
 Pod::Spec.new do |s|
   s.name             = 'immutable_device_identifier'
   s.version          = '0.0.1'
-  s.summary          = 'A new Flutter plugin project.'
+  s.summary          = 'It supply device identifier for iOS / Android device.'
   s.description      = <<-DESC
-A new Flutter plugin project.
+It supply device identifier for iOS / Android device.
+(That identifier does not change per installation)
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://github.com/creche-studio/immutable_device_identifier'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
